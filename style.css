@@ -4,19 +4,13 @@
 
     /* Color scheme */
 
-    --textcolor: #121212;
-    --bgcolor: #dadada;
-    --highlight: #585e74;
+    --textcolor: #dadada;
+    --bgcolor: #1a2026;
+    --highlight: #9ce5c0;
+    --cardbg: #29343d;
 
 }
 
-@media (prefers-color-scheme: dark) {
-    * {
-        --textcolor: #dadada;
-        --bgcolor: #30333d;
-        --highlight: #9ce5c0;
-    }
-}
 
 body {
     font-size: 18px;
@@ -483,7 +477,7 @@ article time {
     margin-top: 16px;
     margin-bottom: 16px;
     border-radius: 10px;
-    background:#292b34;
+    background: var(--cardbg);
     box-shadow: inset 1px 1px 0 rgba(0,0,0,.2), inset -1px -1px 0 rgba(0,0,0,.04);
     transition: 0s;
 }
@@ -493,9 +487,8 @@ article time {
 .card:hover {
     /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
     border-radius: 10px;
-    background:#292b34;
+    background: var(--cardbg);
     box-shadow: inset 1px 1px 0 rgba(0,0,0,.2), inset -1px -1px 0 rgba(0,0,0,.04);
-    /* border: 1px solid #585e74; */
 }
 
 /* Add some padding inside the card container */
@@ -526,4 +519,8 @@ i {
 .card-title {
     text-align:center; 
     margin-bottom: 5px;
+}
+
+.major {
+    text-align: center;
 }
